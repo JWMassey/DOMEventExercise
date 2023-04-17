@@ -18,6 +18,7 @@ h3.addEventListener(`mouseover`, () =>{
 const form = document.querySelector(`form`)
 //3b
 form.addEventListener(`submit`, p => {
+    p.preventDefault();
     alert(form.elements.entry.value)
 })
 
